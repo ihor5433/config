@@ -17,8 +17,8 @@ echo "Instaling OH-MY-ZSH"
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 echo "Copy ZSH-config"
-wget https://github.com/ihor5433/config/blob/master/.alias_zsh -P $HOME
-wget https://github.com/ihor5433/config/blob/master/.zshrc -P $HOME
+wget https://raw.githubusercontent.com/ihor5433/config/master/.alias_zsh -P $HOME
+wget https://raw.githubusercontent.com/ihor5433/config/master/.zshrc -P $HOME
 
 echo "Configure zsh"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
